@@ -1,8 +1,10 @@
 ---
 title: "Skilaverkefni 1"
 author:
+  - name: Árni Erik Kolbeinsson Schenk
   - name: Rúnar Þór Árnason
-  - name: -- 
+  - name: Benedikt Þórisson
+  - name: Viktor Berg Vignisson
 output:
   html_document:
     code_folding: hide
@@ -11,11 +13,10 @@ output:
 # Hluti 1 Gagnamöndl
 
 Hér hlöðum við niður pökkunum sem við ætlum að nota 
-```{r message=FALSE, warning=FALSE, eval=FALSE,echo=FALSE}
+```{r message=FALSE, warning=FALSE, eval=TRUE,echo=FALSE}
 library(tidyverse)
 library(readr)
-pisa <- read_csv("pisa.csv")
-View(pisa)
+library(dplyr)
 
 
 ```
@@ -23,10 +24,30 @@ View(pisa)
 
 
 ## Liður a) 
-```{r}
-
+```{r message=FALSE, warning=FALSE}
+abrv <- read_csv("pisa.csv")
 
 
 
 ```
+
+## Liður b)
+```{r}
+ekki_2003 <-filter(abrv, year>=2003)
+
+
+```
+
+## Liður c)
+```{r}
+abrv$mean_math_science <- (abrv$math + abrv$science) / 2
+
+```
+
+## Liður d)
+
+
+## Liður e)
+
+
 

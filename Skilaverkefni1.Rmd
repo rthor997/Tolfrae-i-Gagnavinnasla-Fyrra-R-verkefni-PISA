@@ -1,0 +1,32 @@
+---
+title: "Skilaverkefni 1"
+author:
+  - name: Rúnar Þór Árnason
+  - name: -- 
+output:
+  html_document:
+    code_folding: hide
+---
+
+# Hluti 1 Gagnamöndl
+
+Hér hlöðum við niður pökkunum sem við ætlum að nota 
+```{r message=FALSE, warning=FALSE, eval=FALSE,echo=FALSE}
+library(tidyverse)
+library(readr)
+pisa <- read_csv("pisa.csv")
+View(pisa)
+
+
+```
+
+
+
+## Liður a) 
+```{r}
+
+
+
+
+```
+
